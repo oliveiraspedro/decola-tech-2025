@@ -25,6 +25,14 @@ public class User {
     @OneToMany(cascade = CascadeType.ALL)
     private List<News> news;
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     public String getName() {
         return name;
     }
