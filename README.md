@@ -1,4 +1,11 @@
 # Decola Tech 2025 Desafio
+Desafio Java RESTful API feito durante o bootcamp Decola Tech 2025
+
+## Principais Tecnologias
+- Java 17: Utilizaremos a versão LTS mais recente do Java para tirar vantagem das últimas inovações que essa linguagem robusta e amplamente utilizada oferece;
+- Spring Boot 3: Trabalharemos com a mais nova versão do Spring Boot, que maximiza a produtividade do desenvolvedor por meio de sua poderosa premissa de autoconfiguração;
+- Spring Data JPA: Exploraremos como essa ferramenta pode simplificar nossa camada de acesso aos dados, facilitando a integração com bancos de dados SQL;
+- OpenAPI (Swagger): Vamos criar uma documentação de API eficaz e fácil de entender usando a OpenAPI (Swagger), perfeitamente alinhada com a alta produtividade que o Spring Boot oferece;
 
 ## Diagrama de Classes
 ```mermaid
@@ -63,9 +70,9 @@ classDiagram
         +setDescription(String description)
     }
 
-    User --> Account
-    User --> Feature : has
-    User --> Card
-    User --> News : has
+    User --> Account : has
+    User --> Card : has
+    User --o Feature : has multiple
+    User --o News : has multiple
 ```
 
