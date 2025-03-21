@@ -1,6 +1,7 @@
 # Decola Tech 2025 Desafio
 
 ## Diagrama de Classes
+```mermaid
 classDiagram
     class User {
         +String name
@@ -36,3 +37,4 @@ classDiagram
     User --> Feature : has
     User --> Card
     User --> News : has
+```
